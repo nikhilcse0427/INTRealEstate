@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Project27",
+			"path": "."
+		},
+		{
+			"name": "Login",
+			"path": "../Login"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Login"
+	}
+}
