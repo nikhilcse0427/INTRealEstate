@@ -1,0 +1,682 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf0f7; /* Set a light background color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Set navbar background color */
+    padding: 3px;
+}
+
+.logo img {
+    width: 200px; /* Adjust the width of the logo as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #0d0c0c;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #26d24e; /* Change this color to your desired hover color */
+}
+
+#login-btn {
+    background-color: #1d70b4; /* Set button background color to white */
+    border: 2px solid #0c0d0d; /* Add a border with a light blue color */
+    color: #ebd530; /* Set text color to light blue */
+    padding: 0px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Add border-radius for a rounded button */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add transition effect */
+}
+
+#login-btn a {
+    text-decoration: none;
+    color: rgb(254, 250, 250); /* Inherit text color from parent */
+}
+
+#login-btn:hover {
+    background-color: #1cdad0; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    border-color: #090f01; /* Change border color on hover */
+}
+
+/* text overlay */
+
+#home {
+    position: relative;
+    height: 86vh;
+    width: 100%; /* Ensure full width */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide overflowing text */
+}
+
+.image-container img {
+    padding-top: 2px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.card {
+    width: calc(20% - 20px); /* Adjust card width to fit 5 cards in a row */
+    margin: 10px; /* Add margin between cards */
+    text-align: center;
+    background-color: white; /* Dark background color */
+    color: #070707; /* Light text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effect */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+    height: 250px
+}
+
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0%; /* Adjust as needed */
+  padding-top: 2px;
+}
+
+.button-row button {
+  flex-grow: 1;
+  margin-right: 5px; /* Adjust spacing between buttons */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Move the card slightly up on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+.service-image-container {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    padding-top:25px;
+}
+
+.service-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.text-container {
+    padding: 10px;
+}
+
+.text-container h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.text-container p {
+    font-size: 14px;
+    margin: 0;
+}
+footer {
+    background-color: #ccc; /* Dark background color for the footer */
+    color: #0a0909; /* Light text color */
+    padding: 50px 0; /* Add padding to the footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Distribute content evenly */
+}
+
+.company-details,
+.quick-links,
+.social-links {
+    flex: 1; /* Each section takes equal space */
+    text-align: center; /* Center-align content */
+}
+
+.company-details h3,
+.quick-links h3,
+.social-links h3 {
+    margin-bottom: 20px; /* Add spacing below headings */
+}
+
+.company-details p,
+.quick-links ul,
+.social-links ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.quick-links ul li,
+.social-links ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.quick-links ul li a,
+.social-links ul li a {
+    color: #0f0e0e; /* Light text color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.quick-links ul li a:hover,
+.social-links ul li a:hover {
+    color: #26d24e; /* Change link color on hover */
+}
+
+.social-links img {
+    width: 30px; /* Adjust size of social media icons */
+    height: 30px;
+    margin: 0 10px; /* Add spacing between icons */
+}
+.col {
+    flex: 1; /* Make columns flexible */
+    width: 100%; /* Make columns fill the entire row */
+}
+
+.chamakdar-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chamakdar-card-header {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.chamakdar-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.chamakdar-card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.chamakdar-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.chamakdar-footer {
+    font-size: 0.8rem;
+    color: #868e96;
+}
+
+
+.recent-property-listed {
+    text-align: center;
+  }
+  
+  .first-line {
+    font-weight: bold;
+    color: #333; /* Dark color for the first line */
+  }
+  
+  .second-line {
+    color: #666; /* Lighter color for the second line */
+  }
+  /* Styles for the card container */
+.kulfi-mandali {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Styles for each card */
+  .kulfi {
+    margin-bottom: 20px;
+    width: 300px;
+    border-radius: 0px;
+    border: solid rgb(243, 235, 235);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for each card */
+  .kulfi:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Styles for card images */
+  .kulfi-tasveer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+  }
+  
+  /* Styles for the card content */
+  .kulfi-mansa {
+    padding: 20px;
+  }
+  
+  /* Styles for the card title */
+  .kulfi-nam {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Styles for the card text */
+  .kulfi-baat {
+    color: #666;
+  }
+  
+  /* Hover effect for card title */
+  
+  
+  .red-color {
+    color: red;
+  }
+  .kulfi {
+    margin-bottom: 20px;
+    margin-right: 20px; /* Adjust the value as needed */
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .kulfi:last-child {
+    margin-right: 0; /* Removes margin-right for the last card in each row */
+  }
+  
+  
+
+
+
+
+  .card89 {
+    max-width: 300vh;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 60vh; /* Set height to cover 300vh */
+  }
+  
+  .kawan {
+    display: flex;
+    height: 100%;
+  }
+  
+  .aukat-md-4 {
+    flex: 0 0 33.33%;
+  }
+  
+  .aukat-md-8 {
+    flex: 0 0 66.67%;
+  }
+  
+  .chitra {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .card-badhan {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .badhan-shirshak {
+    margin-top: 0;
+  }
+  
+  .badhan-mat {
+    margin-bottom: 0.5rem;
+  }
+  
+  small {
+    color: #6c757d;
+  }
+  
+
+
+/* Reset styles */
+
+  
+  /* Card styles */
+  /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  .dhobi {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  /* Card styles */
+  .chindi {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .muduka-bhai-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .muduka-bhai-text {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .kagadi {
+    padding: 1.25rem;
+  }
+  
+  /* Button styles */
+  .bhai-btn {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+  }
+  
+  .bhai-btn-jack {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .bhai-btn-jack:hover {
+    background-color: #dae333;
+    border-color: #dcec2e;
+  }
+  
+  /* Grid styles */
+  .dhobi {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .bhai-col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+
+
+  /* Section styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333; /* Choose your preferred color */
+  }
+  
+
+
+  .about-section {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 0 10px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.card:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.card:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+  .about-section {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 0 10px;
+}
+
+.card12 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+
+
+.about-section {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 0 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: #666;
+}
+
+.card:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.card:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .column {
+      flex: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+      flex: 100%;
+  }
+}
